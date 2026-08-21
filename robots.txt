@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://empresarecuperaciondatosdiscoduro.com.es/sitemap.xml
