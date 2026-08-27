@@ -52,6 +52,19 @@ REVISIÓN (todo lo aplicado en esta primera pasada):
 - api/contacto.js ya usaba SMTP + nodemailer correctamente; no
   requería conversión.
 
+REVISIÓN ADICIONAL (a petición del cliente):
+- Menú de escritorio: varios enlaces ("Qué ha pasado", "Cómo
+  trabajamos", "Pedir cita", "Contacto") se partían en dos líneas por
+  falta de espacio (7 enlaces + píldora "Llamar ahora" + logo de
+  300px en una fila). Añadido white-space:nowrap a .links a y
+  reducidos ligeramente gap (22px→18px) y font-size (14px→13.5px)
+  para que quepan en una sola línea sin partirse.
+- Icono de WhatsApp del botón grande: el <svg> no tenía tamaño
+  definido (sin width/height ni regla CSS), así que se mostraba al
+  tamaño por defecto del navegador, mucho más grande de lo previsto.
+  Añadido .btn svg{width:22px;height:22px;margin-right:8px;flex:0 0
+  22px}.
+
 Variables SMTP en Vercel (ya configuradas, sin cambios):
 SMTP_HOST=cp7124.webempresa.eu
 SMTP_PORT=465
