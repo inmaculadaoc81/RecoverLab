@@ -65,6 +65,34 @@ REVISIÓN ADICIONAL (a petición del cliente):
   Añadido .btn svg{width:22px;height:22px;margin-right:8px;flex:0 0
   22px}.
 
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona" ("Tu Mac no funciona. Aquí
+  protegemos y recuperamos tus datos."). Reescrito en formato
+  imperativo, incluye la marca: "Recuperamos los datos de tu Mac con
+  garantía." (8 palabras).
+- BUG REAL — el botón CTA de teléfono no tenía icono, a diferencia del
+  de WhatsApp. Añadido (verificado con cuidado el cierre de las
+  etiquetas </a>: 30 aperturas / 30 cierres).
+- BUG REAL — la casilla de política de privacidad existía pero el
+  texto no enlazaba a ningún sitio. Añadido el enlace estándar de la
+  familia a https://kelatos.com/privacy-policy/, resaltado en azul.
+- Añadida franja de aviso de servicio técnico independiente debajo del
+  menú (no existía). Verificado antes que .header no usa
+  display:flex directamente.
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Verificado sin bugs: .hero-orbit es una forma decorativa sin texto
+  (no es el patrón de etiqueta rotada tipo hero-chip); el ticker
+  ".hero::after" ya se ocultaba correctamente en móvil; Cal.com ya
+  estaba presente; schema.org ya usaba correctamente el único
+  teléfono de este repo.
+- NO SE HA TOCADO — mismo patrón que en reparacion-ordenadores-madrid
+  (repo procesado en esta misma sesión): el formulario usa un envío
+  HTML tradicional (action="/api/contacto" con recarga de página) en
+  vez del fetch/AJAX del resto de la familia. Es funcionalmente
+  coherente (la API responde con una página que muestra un alert() y
+  redirige), así que no se ha considerado un bug.
+
 Variables SMTP en Vercel (ya configuradas, sin cambios):
 SMTP_HOST=cp7124.webempresa.eu
 SMTP_PORT=465
