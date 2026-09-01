@@ -100,3 +100,25 @@ SMTP_SECURE=true
 SMTP_USER=soporte@kelatos.com
 SMTP_PASS=[configurada únicamente en Vercel]
 CONTACT_EMAIL=soporte@kelatos.com
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente — repo 30/48):
+- BUG REAL — enlace de Cal.com desactualizado. Actualizado a
+  https://cal.com/kelatos/30min?embed=true&theme=light&attendeePhoneNumber=%2B34&overlayCalendar=true.
+- BUG REAL — soporte@kelatos.com aparecía como texto visible dos veces
+  (fila "Email:" en la sección de contacto y en el pie de página).
+  Quitado de ambos sitios; el correo solo se usa en backend (SMTP).
+- BUG REAL — el mensaje prellenado de WhatsApp decía "¡Hola Kelatos!".
+  Corregido a "¡Hola RecoverLab!".
+- BUG REAL — el menú móvil (#mobileMenu, estilo atributo hidden) no
+  tenía ningún listener que lo cerrara al pulsar un enlace. Añadido el
+  script estándar de la familia.
+- Verificado: sin iconos ni imágenes con proporciones fijas
+  incorrectas.
+- BUG REAL — el H1 en móvil estaba en 46px. Corregido a 48px.
+- BUG REAL — botones del hero (.btn) con border-radius de 15px y sin
+  estado hover. Aumentado a border-radius:999px; añadido
+  filter:brightness(.88) en wa/collect (colores sólidos) y relleno
+  sólido con var(--teal) + texto blanco en el botón de teléfono
+  (estilo contorno) al pasar el ratón.
+- Verificado: este repo no usa el patrón de franja de insignias bajo
+  el H1 (familia Dyson); no aplica la reubicación.
