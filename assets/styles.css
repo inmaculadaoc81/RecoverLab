@@ -29,3 +29,4 @@ footer{background:#061622;color:#c8d9df;padding:40px 0}.footergrid{display:grid;
 #n8n-chat .chat-window-toggle,#n8n-chat [class*="chat-window-toggle"]{right:16px!important;bottom:90px!important}
 #n8n-chat .chat-window,#n8n-chat [class*="chat-window"]:not([class*="toggle"]){left:12px!important;right:12px!important;width:auto!important;bottom:160px!important}}
 .budget:hover{filter:brightness(.88)}
+.budget svg{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;flex:0 0 20px!important}
